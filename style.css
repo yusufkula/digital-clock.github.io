@@ -1,15 +1,16 @@
 body{
     text-align: center;
     background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 0px;
     padding-top: 100px;
+    color: rgb(255, 255, 255);
 }
 
 h1 {
     font-weight: bold;
     font-size: 70px;
+    color: white;
 }
 
 h2 {
@@ -18,14 +19,46 @@ h2 {
 }
 
 .time {
-    min-width: 70px;
+    min-width: 80px;
     height: 100px;
     outline-style: groove;
-    border-radius: 50px;
+    border-radius: 45px;
+    color: white;
 }
 
 .time:hover{
     cursor: pointer;
     background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
     color: rgb(255, 255, 255);
+}
+
+.buttonDark {
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-style: none;
+    outline-style: none;
+    border-radius: 20px;
+}
+
+.buttonDark:hover{
+    cursor: pointer;
+    background: rgb(0,19,51);
+    background: linear-gradient(90deg, rgba(0,19,51,1) 0%, rgba(22,61,79,1) 50%, rgba(0,114,122,1) 100%);
+}
+
+.buttonLight {
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    border-style: none;
+    outline-style: none;
+    border-radius: 20px;
+}
+
+.buttonLight:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
