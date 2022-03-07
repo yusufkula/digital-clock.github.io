@@ -12,3 +12,13 @@ function showTime() {
 
     timeEl.textContent = currentTime
 }
+
+function darkMode() {
+    let element = document.body
+    element.className = "darkmode"
+}
+
+function lightMode() {
+    let element = document.body
+    element.className = "lightmode"
+}
