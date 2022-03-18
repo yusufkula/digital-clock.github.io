@@ -1,7 +1,7 @@
 body{
     text-align: center;
     background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 0px;
     padding-top: 80px;
     color: rgb(255, 255, 255);
@@ -20,7 +20,7 @@ h2 {
 
 .time {
     min-width: 40px;
-    height: 120px;
+    height: 100px;
     outline-style: groove;
     border-radius: 50px;
     color: white;
