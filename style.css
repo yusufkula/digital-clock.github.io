@@ -1,66 +1,115 @@
 body{
-    text-align: center;
-    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 0px;
     padding-top: 80px;
     color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    font-weight: bold;
-    font-size: 70px;
-    color: white;
+
+.content {
+    background-color: white;
+    color: black;
+    border-radius: 11px;
+    transition: 0.4s;
+    height: 700px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.212);
+    width: 600px;
 }
 
-h2 {
-    font-weight: bold;
-    font-size: 80px;
+.content:hover {
+    background-color: #02051b;
+    color: whitesmoke;
 }
+
+.time-box {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .time {
-    min-width: 40px;
-    height: 100px;
-    outline-style: groove;
-    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02051b;
+    color: white;
+    height: 300px;
+    font-size: 50px;
+    border-radius: 100rem;
+    width: 310px;
+    transition: 0.6s;
+
+}
+
+
+.time:hover {
+    background-color: whitesmoke;
+    color: #02051b;
+    transform: translateY(10px);
+}
+
+
+.darkmode {
+    background-color: #111827;
     color: white;
 }
 
-.time:hover{
-    cursor: pointer;
-    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
-    color: rgb(255, 255, 255);
+
+.lightmode {
+    background-color: whitesmoke;
+    color: #111827;
 }
 
-
-.buttonDark {
-    height: 40px;
-    width: 80px;
+.navbar {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    border-style: none;
-    outline-style: none;
-    border-radius: 20px;
 }
 
-.buttonDark:hover{
-    cursor: pointer;
-    color: white;
-    background: rgb(0,19,51);
-    background: linear-gradient(90deg, rgba(0,19,51,1) 0%, rgba(22,61,79,1) 50%, rgba(0,114,122,1) 100%);
+
+.title {
+    
+    margin-bottom: 1rem;
 }
 
-.buttonLight {
-    height: 40px;
-    width: 80px;
-    text-align: center;
-    border-style: none;
-    outline-style: none;
-    border-radius: 20px;
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    .content {
+        background-color: white;
+        color: black;
+        border-radius: 11px;
+        transition: 0.4s;
+        height: 600px;
+        box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.212);
+        width: 350px;
+    }
+    
+    .time-box {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #02051b;
+        color: white;
+        height: 300px;
+        font-size: 50px;
+        border-radius: 100rem;
+        width: 310px;
+        padding: 0.5rem;
+    }
 }
 
-.buttonLight:hover{
-    cursor: pointer;
-    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-}
