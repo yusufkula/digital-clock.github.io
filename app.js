@@ -1,8 +1,10 @@
-const timeEl = document.getElementById("time-el")
+let timeEl = document.getElementById("time-el")
+let content = document.getElementById("content")
 
-setInterval(showTime, 1000)
 
-function showTime() {
+setInterval(Uktime, 1000)
+
+function Uktime() {
     let current = new Date()
     let hour = current.getHours()
     let min = current.getMinutes()
@@ -13,12 +15,3 @@ function showTime() {
     timeEl.textContent = currentTime
 }
 
-function darkMode() {
-    let element = document.body
-    element.className = "darkmode"
-}
-
-function lightMode() {
-    let element = document.body
-    element.className = "lightmode"
-}
